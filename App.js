@@ -3,19 +3,16 @@ import { StyleSheet, Text, View, Image, Pressable, TouchableOpacity } from 'reac
 
 export default function App() {
   return (
-    // TODO: Colocar um icone, um title e dois botões em linha cadastre e login com estilo diferentes
+    
     <View style={styles.container}>
-      {/* Importação com require, lembra do commonjs */}
-      {/* Estilo em linha -> chaves duplas */}
-      <Image source={require("./assets/icon.png")} style={{width: 120, height: 120}} />
-      <Text style={styles.title}>App Title</Text>
-      <View style={styles.btnWrapper}>
-        {/* Vizualização no terminal, é um console... */}
+      <Image source={require("./src/assets/icon.png")} style={{width: 120, height: 120}} />
+      <Text style={styles.title}>App Teste</Text>
+      <View style={styles.btnWrapper}>        
         <Pressable onPress={() => console.log("Pressable")}>
           <Text style={styles.btnPrimary} >Não tem cadastro</Text>
         </Pressable>
         <TouchableOpacity style={styles.btnSecondary} onPress={() => console.log("TouchableOpacity")}>
-          <Text style={{color: "white"}}>Login</Text>
+          <Text style={{color: "black", textDecorationLine: "bold"}}>Login</Text>
         </TouchableOpacity>
       </View>
       <StatusBar style="auto" />
@@ -46,7 +43,7 @@ const styles = StyleSheet.create({
     color: "black"
   }, // esse tem estilo com cor e underline
   btnSecondary: {
-    backgroundColor: "blue",
+    backgroundColor: "#00ac2b",
     borderRadius: 16,
     padding: 10,
   }, // esse tem cor de fundo e bordas...

@@ -4,6 +4,7 @@
   "main": "index.js",
   "dependencies": {
     "expo": "~57.0.12",
+    "expo-linear-gradient": "~57.0.1",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
     "react-native": "0.86.2"
@@ -14,5 +15,19 @@
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
-  "private": true
+  "private": true,
+  "description": "",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/professor-correa/my-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/professor-correa/my-app/issues"
+  },
+  "homepage": "https://github.com/professor-correa/my-app#readme"
 }
