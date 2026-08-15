@@ -16,15 +16,19 @@ export default function Login() {
   end={{ x: 2, y: 0.4 }}
   style={styles.container}>
            
-        <Image source={require("../../assets/rem.png")} style={{width: 120, height: 120}} />
-        <Text style={styles.zero}>Zero</Text>      
+        <Image source={require("../../assets/rem.png")} style={{width: 120, height: 120, display: "flex", alignItems: "center"}} />
+        <Text style={styles.zero}>Zero</Text>  
+        <View style={styles.div2}>
 
-            <View style={styles.div2}>
+         <TouchableOpacity style={styles.button} onPress={() => console.log("Cadastro")}>
+            <Text style={[styles.logar]}>Entrar</Text>
+         </TouchableOpacity>   
+         <TouchableOpacity style={styles.button} onPress={() => console.log("Logar")}>
             <Text style={styles.cadastro}>Cadastrar</Text>
-           
-            <Text style={styles.Logar}>Entrar</Text>
-            </View>                     
-        
+         </TouchableOpacity>
+       
+        </View>                     
+
     </LinearGradient>
     )
 }
@@ -48,20 +52,25 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center",
         flexDirection: "row",  
-        gap: 38,  
-        padding: 90
-        
-
+        gap: 38
+                       
     },
-    cadastro: {
-        color: "white",      
+      button: {
+        backgroundColor: "#6565b3",   
+        width: 120,    
+        borderRadius: 16,
+        justifyContent: "center",
+        alignItems: "center"
+             
+    }, 
+      cadastro: {
+        color: "black",      
         fontWeight: "300",
-        fontSize: 22,
-        
+        fontSize: 22,   
 
     },
-    Logar: {     
-        color: "white",
+      logar: {     
+        color: "black",
         fontWeight: "300",
         fontSize: 22,
         
