@@ -1,24 +1,24 @@
 {
   "expo": {
-    "name": "my-app",
-    "slug": "my-app",
+    "name": "Re: Zero",
+    "slug": "Re: Zero",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./src/assets/icon.png",
-    "userInterfaceStyle": "light",
+    "icon": "./src/assets/rem-app-logo.png",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./src/assets/android-icon-foreground.png",
-        "backgroundImage": "./src/assets/android-icon-background.png",
-        "monochromeImage": "./src/assets/android-icon-monochrome.png"
+        "backgroundColor": "black",
+        "foregroundImage": "./src/assets/skybox-app-background.png",
+        "backgroundImage": "./src/assets/skybox-app-background.png",
+        "monochromeImage": "./src/assets/skybox-app-background.png"
       }
     },
     "web": {
-      "favicon": "./src/assets/favicon.png"
+      "favicon": "./src/assets/skybox-app-background"
     }
   }
 }

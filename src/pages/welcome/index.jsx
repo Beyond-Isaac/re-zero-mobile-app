@@ -1,4 +1,4 @@
-import {Text, View, StyleSheet, ImageBackground, Image, TouchableOpacity} from "react-native"; 
+import {Text, View, StyleSheet, ImageBackground, Image, TouchableOpacity, ImageB} from "react-native"; 
 import {LinearGradient} from "expo-linear-gradient";
 
 export default function Welcome() {
@@ -30,8 +30,7 @@ export default function Welcome() {
                   <Text style={styles.text}>Login</Text>
                 </TouchableOpacity>
               </View>
-            
-            
+                       
               </LinearGradient>    
             </ImageBackground>    
 
@@ -88,6 +87,13 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         width: 150,
         padding: 10,
-    }
+    }, 
+    
+    backgroundImage: {
+      flex: 1,
+      width: '100%',
+      resizeMode: 'stretch',
+      margin: 0,
+  },
 
 });
