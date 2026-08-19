@@ -4,15 +4,10 @@ import { LinearGradient } from "expo-linear-gradient";
 export default function Login() {
     return (
         <View style={styles.mainContainer}> 
-            <LinearGradient 
-                colors={["#101020", "#204860", "#302050", "#702050", "#101020"]}  
-                start={{ x: -3, y: 0.4 }} 
-                end={{ x: 2, y: 0.4 }}
-                style={styles.gradientTop}
-            >
-                <Image source={require("../../assets/rem.png")} style={styles.imageStyle} />
-                <Text style={styles.zero}>Zero</Text>  
-            </LinearGradient>
+       
+              
+                
+          
 
             <View style={styles.container}>
                 <View style={styles.div2}>
@@ -22,12 +17,9 @@ export default function Login() {
                     </View>
 
                     <TouchableOpacity style={styles.button} onPress={() => console.log("Cadastro")}>
-                        <Text style={styles.textos}>Entrar</Text>
+                        <Text style={styles.textos}>Logar</Text>
                     </TouchableOpacity>  
-
-                    <TouchableOpacity style={styles.button} onPress={() => console.log("Logar")}>
-                        <Text style={styles.textos}>Cadastrar</Text>
-                    </TouchableOpacity>
+           
                 </View>                     
             </View>     
         </View>     
@@ -45,17 +37,19 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     imageStyle: {
-        width: 120, 
-        height: 120,
+        width: 320, 
+        height: 320,      
+        marginTop: 145,
+        
     },
     container: {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
-        backgroundColor: "#000000",
+        backgroundColor: "#00000079",
     }, 
     textdisplay: {
-        backgroundColor: "#D3D3D3",  
+        backgroundColor: "#77777728",  
         borderRadius: 16,
         padding: 8,
         width: 160,
@@ -71,7 +65,7 @@ const styles = StyleSheet.create({
         gap: 15,
     },
     button: {
-        backgroundColor: "#6565b3",   
+        backgroundColor: "#6565b3a9",   
         width: 200,    
         borderRadius: 16,
         paddingVertical: 10,
