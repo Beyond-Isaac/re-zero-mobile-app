@@ -1,7 +1,7 @@
 import { Text, View, StyleSheet, TouchableOpacity, TextInput, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-export default function Register() {
+const SingUp = () => {
     return (
         <ImageBackground 
             style={styles.backgroundImage} 
@@ -123,3 +123,5 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
 });
+
+export default SingUp

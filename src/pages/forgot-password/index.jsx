@@ -1,11 +1,11 @@
 import { Text, View, StyleSheet, TouchableOpacity, TextInput, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
-export default function ForgotPassword() {
+const ForgotPassword = () => {
     return (
         <ImageBackground 
             style={styles.backgroundImage} 
-            source={require("../../assets/rem-background-profile.jpg")} 
+            source={require("../../assets/welcome-background-rem.png")}
         >      
             <LinearGradient  
                 colors={[
@@ -129,3 +129,5 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
 });
+
+export default ForgotPassword

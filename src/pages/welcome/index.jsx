@@ -1,7 +1,7 @@
 import {Text, View, StyleSheet, ImageBackground, Image, TouchableOpacity, ImageB} from "react-native"; 
 import {LinearGradient} from "expo-linear-gradient";
 
-export default function Welcome() {
+const Welcome = () => {
     return(
         
             <ImageBackground style={styles.backgroundImage} source={require("../../assets/welcome-background-rem.png")}>      
@@ -36,6 +36,8 @@ export default function Welcome() {
 
     );
 }
+
+
 
 const styles = StyleSheet.create({
 
@@ -97,3 +99,5 @@ const styles = StyleSheet.create({
   },
 
 });
+
+export default Welcome
