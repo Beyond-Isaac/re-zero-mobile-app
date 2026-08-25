@@ -1,7 +1,8 @@
 import { Text, View, StyleSheet, TouchableOpacity, TextInput, ImageBackground } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
+import { userNavigation } from "@react-navigation/native";
 
-const ForgotPassword = () => {
+const ForgotPassword = ({ navigation }) => {
     return (
         <ImageBackground 
             style={styles.backgroundImage} 
